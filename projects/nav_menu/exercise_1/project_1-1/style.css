@@ -1,0 +1,54 @@
+body { 
+    max-width: 1200px;  /* La página no será más ancha que 1200 píxeles */
+    width: 100%;  /* Ocupa todo el ancho disponible */
+    margin: auto;  /* Hace que el contenido se quede en el centro */
+}
+
+/* El body es como la hoja en la que dibujamos. Queremos que siempre tenga un tamaño adecuado y que esté centrada en la pantalla. */
+
+#nav__menu {
+    width: 100%;  /* Ocupa todo el ancho de la pantalla */
+    height: 60px;  /* Hace que el menú tenga una altura de 60 píxeles */
+    background-color: #ccc;  /* Le damos un color gris al fondo */
+}
+
+/* Este bloque es como una barra que se extiende por toda la parte superior de la página y tiene un color de fondo para que sea visible. */
+
+.menu__container {
+    height: 100%;  /* Usa toda la altura de su "papá" (#nav__menu) */
+}
+
+/* Esto es como una caja dentro de otra caja más grande (#nav__menu). Hace que todo lo que está dentro use toda la altura disponible. */
+
+.menu__list { 
+    display: flex;  /* Hace que los elementos dentro se coloquen en fila */
+    justify-content: center;  /* Los elementos se colocan en el centro horizontalmente */
+    align-items: center;  /* Los elementos se centran verticalmente */
+    list-style: none;  /* Quitamos los puntitos de la lista */
+    height: 100%;  /* Ocupa toda la altura del contenedor */
+}
+
+/* Aquí organizamos la lista con display: flex, lo que significa que los ítems del menú se ponen en fila y se centran perfectamente en la barra. */
+
+.menu__item { 
+    font-size: 20px;  /* Tamaño de letra más grande */
+    padding: 0 20px;  /* Espacio a los lados de cada botón */
+    height: 100%;  /* Ocupa toda la altura de la barra */
+    display: flex;  /* Para centrar mejor el texto */
+    align-items: center;  /* Centra el texto verticalmente */
+}
+
+/* Cada botón es como una cajita que tiene texto dentro. Le damos un tamaño de letra adecuado, espacio a los lados y nos aseguramos de que el texto siempre esté bien alineado en el centro. */
+
+.menu__item:hover {
+    background-color: #000;  /* Se vuelve negro cuando pasamos el ratón */
+}
+
+/* Esto hace que cuando pasamos el ratón sobre un botón, cambie de color. Es un efecto que le da más vida al menú. */
+
+.menu__item a {
+    text-decoration: none;  /* Quitamos el subrayado de los enlaces */
+    color: #fff;  /* Hacemos que el texto sea blanco */
+}
+
+/* Aquí eliminamos el subrayado de los enlaces y hacemos que el texto sea blanco para que se vea mejor sobre el fondo. */
