@@ -1,0 +1,50 @@
+body {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+#header__container {
+	width: 100%;
+	height: 60px;
+	background-image: url(assets/fondo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.header__menu {
+	width: 100%;
+	height: 100%;
+}
+
+.menu__list {
+	list-style: none;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	/* margin: 0; Para quitar el margen de arriba de la cabecera */
+}
+
+.menu__item {
+	font-size: 20px;
+	padding: 0 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.menu__item a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu__item:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.menu__item:hover a {
+	font-size: 24px;
+	color: red;
+	font-weight: bold;
+}
