@@ -10,15 +10,23 @@
 
 <body>
 	<header id="header__container">
+		<!-- Añadir menú hamburguesa aquí -->
+		<div class="menu__hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
 		<nav class="header__menu">
 			<ul class="menu__list">
 				<li class="menu__item"><a href="#">Inicio</a></li>
 				<li class="menu__item"><a href="#">Sobre mi</a></li>
 				<li class="menu__item"><a href="#">Proyectos</a></li>
-				<li class="menu__item"><a href="#">Tecnologías</a></li>
+				<li class="menu__item"><a href="#">Tecnologías</a></li>
 				<li class="menu__item"><a href="#">Contacto</a></li>
 			</ul>
 		</nav>
+
 		<div class="header__media">
 			<ul class="media__list">
 				<li class="media__item">
@@ -55,16 +63,23 @@
 	<section id="section__container">
 		<div class="section__content">
 			<div class="section__profile">
-				<img class="profile__img" src="assets/profile.jpg" alt="Profile">
+				<img class="profile__img" src="assets/img/profile.jpg" alt="Profile">
 			</div>
 			<div class="section__info">
-				<h1>Alejandro Rumí Morales</h1>
-				<p>Técnico Superior en Desarrollo de Aplicaciones Web</p>
-				<a class="info__button" href="https://github.com/alejandrorumi-dev/" target="_blank">Github</a>
-				<a class="info__button" src="#" target="_blank">Descargar CV</a>
+				<div class="info__profile">
+					<h1>Alejandro Rumí Morales</h1> <br>
+					<p>Técnico Superior en Desarrollo de Aplicaciones Web</p>
+				</div>
+				<div class="info__buttons">
+					<a class="info__button" href="https://github.com/alejandrorumi-dev/DevPortfolio"
+						target="_blank">Github</a>
+					<a class="info__button" href="assets/others/Alejandro_Rumí_Morales_CV.pdf" target="_blank">Descargar
+						CV</a>
+				</div>
 			</div>
 		</div>
 	</section>
+	<script src="assets/js/menu.js"></script>
 </body>
 
 </html>
