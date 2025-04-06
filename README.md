@@ -31,7 +31,7 @@
 
 ###
 
-<p align="left">I'm Alejandro Rumí Morales from Almería, Spain.<br><br>- 🔭 I’m working as Frontend Developer Web.<br>- 📚 I'm currently learning to be a Frontend Developer Web.</p>
+<p align="left">I'm Alejandro Rumí Morales from Almería, Spain.<br><br>- 🔭 I want to work as Frontend Developer Web.<br>- 📚 I'm currently learning to be a Frontend Developer Web.</p>
 
 ###
 
