@@ -22,7 +22,6 @@
 	margin: 0;
 	background-color: #000;
 	overflow-x: hidden;
-	font-family: var(--font-primary);
 	color: var(--color-text);
   }
   
@@ -42,6 +41,10 @@
 	text-transform: uppercase;
 	transition: var(--transition-default);
 	cursor: pointer;
+  }
+
+  li {
+	list-style: none;
   }
   
   button:hover {
@@ -165,6 +168,7 @@
   }
   
   .content__buttons {
+	width: 100%;
 	text-align: center;
   }
   
@@ -176,3 +180,90 @@
   .content__buttons button:hover {
 	background-color: var(--color-secondary);
   }
+
+  #section__about-me {
+	width: 100%;
+	min-height: 100vh; /* Cambio a min-height para mejor comportamiento con contenido variable */
+	padding: 40px 0; /* Añadir padding para evitar que el contenido toque los bordes */
+  }
+  
+  .about-me__header {
+	width: 90%;
+	position: relative;
+	margin: 0 auto 40px; /* Aumentar margen inferior para mejor separación */
+  }
+  
+  .header__title {
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: var(--font-secondary);
+	margin: 0 0 15px; /* Añadir margen inferior explícito */
+	color: var(--color-text); /* Usar variable para consistencia */
+  }
+  
+  .header__line {
+	width: 70px;
+	height: 5px; /* Ligera reducción para mejor estética */
+	background-color: var(--color-secondary);
+	position: absolute;
+	bottom: -10px; /* Mejor posicionamiento */
+	left: 0;
+  }
+  
+  .about-me__content {
+	width: 90%;
+	display: flex;
+	justify-content: space-between; /* Mejor distribución del espacio */
+	align-items: center;
+	margin: 0 auto;
+	flex-wrap: wrap; /* Permitir que se adapte en móviles */
+	gap: 30px; /* Espacio entre elementos cuando se apilan */
+  }
+  
+  .about-me__img {
+	flex: 1 1 45%; /* Uso de flexbox más flexible */
+	min-width: 300px; /* Ancho mínimo para evitar imágenes demasiado pequeñas */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px; /* Añadir padding interno */
+  }
+  
+  .content__image {
+	max-width: 100%; /* Limitar al ancho del contenedor */
+	max-height: 70vh; /* Limitar altura máxima */
+	object-fit: cover;
+	border-radius: 20px; /* Reducido para mejor equilibrio visual */
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Añadir sombra para profundidad */
+	transition: transform 0.3s ease; /* Efecto sutil al pasar el cursor */
+  }
+  
+  .content__image:hover {
+	transform: scale(1.02); /* Ligero efecto de zoom al pasar el cursor */
+  }
+  
+  .about-me__info {
+	flex: 1 1 45%; /* Uso de flexbox más flexible */
+	min-width: 300px; /* Ancho mínimo */
+	padding: 20px; /* Añadir padding interno */
+  }
+  
+  .info__title {
+	font-size: 2.5rem; /* Ligeramente más pequeño que el título principal */
+	font-weight: bold;
+	font-family: var(--font-secondary);
+	margin-bottom: 20px; /* Mayor separación */
+	color: var(--color-text);
+  }
+  
+  .info__text {
+	font-size: 1.1rem;
+	line-height: 1.7; /* Mejor espaciado de línea para lectura */
+	color: var(--color-text-muted);
+	margin-bottom: 25px;
+  }
+  
+
+
+
+
