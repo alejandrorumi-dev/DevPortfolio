@@ -185,6 +185,7 @@
 	width: 100%;
 	min-height: 100vh; /* Cambio a min-height para mejor comportamiento con contenido variable */
 	padding: 40px 0; /* Añadir padding para evitar que el contenido toque los bordes */
+	margin-bottom: 50px;
   }
   
   .about-me__header {
@@ -261,6 +262,35 @@
 	line-height: 1.7; /* Mejor espaciado de línea para lectura */
 	color: var(--color-text-muted);
 	margin-bottom: 25px;
+  }
+
+  #section__projects {
+	width: 100%;
+	min-height: 100vh; /* Cambio a min-height para mejor comportamiento con contenido variable */
+	padding: 40px 0; /* Añadir padding para evitar que el contenido toque los bordes */
+  }
+  
+  .projects__header {
+	width: 90%;
+	position: relative;
+	margin: 0 auto 40px; /* Aumentar margen inferior para mejor separación */
+  }
+  
+  .header__title {
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: var(--font-secondary);
+	margin: 0 0 15px; /* Añadir margen inferior explícito */
+	color: var(--color-text); /* Usar variable para consistencia */
+  }
+  
+  .header__line {
+	width: 70px;
+	height: 5px; /* Ligera reducción para mejor estética */
+	background-color: var(--color-secondary);
+	position: absolute;
+	bottom: -10px; /* Mejor posicionamiento */
+	left: 0;
   }
   
 
