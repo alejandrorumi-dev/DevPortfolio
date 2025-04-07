@@ -24,6 +24,10 @@
 	overflow-x: hidden;
 	color: var(--color-text);
   }
+
+  html {
+	scroll-behavior: smooth;
+  }
   
   a {
 	text-decoration: none;
@@ -42,16 +46,16 @@
 	transition: var(--transition-default);
 	cursor: pointer;
   }
-
-  li {
-	list-style: none;
-  }
   
   button:hover {
 	background-color: var(--color-secondary);
 	transform: scale(1.05);
   }
-  
+
+  li {
+	list-style: none;
+  }
+
   /* Header y navegación */
   #header__container {
 	width: 100%;
