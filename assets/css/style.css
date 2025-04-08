@@ -706,7 +706,11 @@ section {
 	}
 
 	.header__media {
-		width: 25%;
+		width: 24%;
+	}
+
+	.media__item {
+		width: 20%;
 	}
 
 	.project__card {
