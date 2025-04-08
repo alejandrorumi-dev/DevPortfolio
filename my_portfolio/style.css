@@ -703,6 +703,21 @@ section {
 	}
 }
 
+@media (max-width: 979px) {
+	#section__about-me, #section__projects, #section__technologies, #section__contact {
+        min-height: auto; /* Quitar el min-height fijo */
+        padding-top: calc(var(--header-height) + 20px); /* Reducir el padding superior */
+    }
+
+    .about-me__content, .projects__content, .technologies__content, .contact__content {
+        padding: 0 10px; /* Reducir el padding horizontal */
+    }
+
+    .about-me__content {
+        gap: 20px; /* Reducir el gap entre los elementos */
+    }
+}
+
 @media (max-width: 912px) {
 	html {
 		font-size: 14px;
