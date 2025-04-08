@@ -6,10 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio - Alejandro Rumí</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 	<header id="header__container">
+		<button class="mobile-menu-btn">
+			<i class="fas fa-bars"></i>
+		</button>
 		<div class="header__name">
 			<a href="index.html" class="name__title">Alejandro Rumí</a>
 		</div>
@@ -265,6 +270,7 @@
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="50"
 					alt="Figma" />
 			</div>
+		</div>
 	</section>
 	<section id="section__contact">
 		<div class="contact__header">
@@ -296,6 +302,16 @@
 			</div>
 		</div>
 	</section>
+	<footer id="footer__container">
+		<div class="footer__content">
+			<p>© 2025 Alejandro Rumí Morales - Todos los derechos reservados</p>
+		</div>
+	</footer>
+	<script>
+		document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+			document.querySelector('body').classList.toggle('mobile-menu-active');
+		});
+	</script>
 </body>
 
 </html>
