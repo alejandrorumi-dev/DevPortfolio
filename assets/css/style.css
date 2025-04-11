@@ -626,6 +626,29 @@ section {
 	font-family: var(--font-primary);
 }
 
+/*Botón de subida*/
+
+.volver-arriba {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 10px;
+	font-size: 30px;
+	border: none;
+	border-radius: 50%;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.volver-arriba.mostrar {
+	opacity: 1;
+	pointer-events: auto;
+}
+
 /* Animaciones */
 @keyframes fadeIn {
 	from {
@@ -728,18 +751,29 @@ section {
 }
 
 @media (max-width: 979px) {
-	#section__about-me, #section__projects, #section__technologies, #section__contact {
-        min-height: auto; /* Quitar el min-height fijo */
-        padding-top: calc(var(--header-height) + 20px); /* Reducir el padding superior */
-    }
 
-    .about-me__content, .projects__content, .technologies__content, .contact__content {
-        padding: 0 10px; /* Reducir el padding horizontal */
-    }
+	#section__about-me,
+	#section__projects,
+	#section__technologies,
+	#section__contact {
+		min-height: auto;
+		/* Quitar el min-height fijo */
+		padding-top: calc(var(--header-height) + 20px);
+		/* Reducir el padding superior */
+	}
 
-    .about-me__content {
-        gap: 20px; /* Reducir el gap entre los elementos */
-    }
+	.about-me__content,
+	.projects__content,
+	.technologies__content,
+	.contact__content {
+		padding: 0 10px;
+		/* Reducir el padding horizontal */
+	}
+
+	.about-me__content {
+		gap: 20px;
+		/* Reducir el gap entre los elementos */
+	}
 }
 
 @media (max-width: 932px) {
@@ -788,7 +822,7 @@ section {
 		border-bottom: 1px solid #333;
 	}
 
-	
+
 
 	.info__title {
 		font-size: 2.2rem;
