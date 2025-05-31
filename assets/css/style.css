@@ -391,6 +391,17 @@ section {
 	color: #fff;
 }
 
+.project__progress {
+	color: #b1a802;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-bottom: 1.2rem;
+}
+
+.modify {
+	color: #10a500;
+}
+
 .project__description {
 	color: #aaa;
 	font-size: 0.95rem;
